@@ -1,0 +1,5 @@
+﻿  Game.cpp
+c:\users\administrator\desktop\game3.0\game\game\game.cpp(20): warning C4838: 从“unsigned int”转换到“char”需要收缩转换
+c:\users\administrator\desktop\game3.0\game\game\game.cpp(26): warning C4838: 从“unsigned int”转换到“char”需要收缩转换
+c:\users\administrator\desktop\game3.0\game\game\game.cpp(83): warning C4838: 从“unsigned int”转换到“char”需要收缩转换
+  Game.vcxproj -> C:\Users\Administrator\Desktop\Game3.0\Game\Debug\Game.exe

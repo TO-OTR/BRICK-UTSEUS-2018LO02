@@ -79,9 +79,9 @@ besoins: balle, barre, briques et Frame.
 
 ####  1.2 **Principe du projet**
 
->Commençons on par une brève introduction au jeu. Dans ce jeu une balle
-rebondit sur les bords haut, gauche et droit de l’écran. <br/>
-En bas de l’écran se trouve une barre que le joueur déplace vers la droite ou vers
+>Commençons on par une brève introduction au jeu. Dans ce jeu une balle rebondit sur les bords haut, gauche et droit de l’écran. <br/>
+>
+>En bas de l’écran se trouve une barre que le joueur déplace vers la droite ou vers
 la gauche avec les touches correspondantes du clavier. La balle rebondit
 sur la barre quand elle « tombe » dessus. Par contre, si la balle
 atteint le bas de l’écran le jeu est perdu. Apres on vas parler brièvement de notre projet.
@@ -97,22 +97,12 @@ atteint le bas de l’écran le jeu est perdu. Apres on vas parler brièvement d
 > Le **‘Brick.h’ et le ‘Brick.cpp’** sont pour les brick.
 >
 > Dans le ‘Brick.h’ nous definions la classe ‘Brick’ qui hérite de la
-> classe ‘Body’ donc il peut utiliser touts les fonctions dans ‘Body.h’.
+ classe ‘Body’ donc il peut utiliser touts les fonctions dans ‘Body.h’.
 > Dans le ‘Brick.cpp’ nous fait les implémentations des fonctions.
 >
 > Dans la class ‘Brick’, nous avons le **constructeur et destructeur**.
->
-> Le paramètre du constructeur est une référence de struct ‘position’
-> (son definition est dans le ‘BodyManager.h’) et une paramètre de la
-> classe ‘Body’. Nous faisions la liste de paramètres pour
-> ‘Body’(constructeur) qui compris le nom de cet ‘Body’,la référence de
-> struct ‘Box’(definir la taille defaut du brique affiché à l'écran ) ,
-> struct ‘position’ (décrire le position de la brique pour preposition
-> et position), string pix(décrire la forme de brique si plus grand que
-> le size de brique (byte) (définié dans le struct Box), il va ‘throw’
-> ‘exceptions’) . Plus dans le constructeur, on initialise les deux
-> variables member rate(la vitesse de brick), hardness(le fois que le
-> ‘ball’ doit choquer la brique avant elle se casse)
+
+> Le paramètre du **constructeur** est une référence de struct ‘position’ (son definition est dans le ‘BodyManager.h’) et une paramètre de la classe ‘Body’. Nous faisions la liste de paramètres pour  ‘Body’(constructeur) qui compris le nom de cet ‘Body’,la référence de struct ‘Box’(definir la taille defaut du brique affiché à l'écran ) , struct ‘position’ (décrire le position de la brique pour preposition et position), string pix(décrire la forme de brique si plus grand que le size de brique (byte) (définié dans le struct Box), il va ‘throw’ ‘exceptions’) . Plus dans le constructeur, on initialise les deux variables member rate(la vitesse de brick), hardness(le fois que le ‘ball’ doit choquer la brique avant elle se casse)
 >
 > Ensuite la fonction **&lt;&lt;void update()&gt;&gt;** est pour
 > déterminer la situation de brique qu’il y a combien de fois de
@@ -256,7 +246,9 @@ atteint le bas de l’écran le jeu est perdu. Apres on vas parler brièvement d
 
 **(Nous seulement dessinons les parties que nous écrivons )**
 
-![C++Brick](C++Brick.png)
+<div align="center">
+<img src="https://github.com/TO-OTR/CPP-2018Rapport-UTSEUS/raw/master/RAPPORT/C++Brick.png" width = 75% height=75% />
+ </div>
 
 
 
@@ -271,7 +263,9 @@ des instructions.
 
 ##### **3.1.1 Game\_start:**
 
-![3.1.1](3.1.1.png)
+<div align="center">
+<img src="https://github.com/TO-OTR/CPP-2018Rapport-UTSEUS/raw/master/RAPPORT/3.1.1.png" width = 75% height=75% />
+ </div>
 
 
 ##### **3.1.2 Brique et Score:**
@@ -284,11 +278,16 @@ des instructions.
 >
 >3.  Les briques rouge sont 100 point. Ils peuvent supporter une
 >    collision.
->
+
 >4.  Quelque briques ont rates, vous peuvez trouver que la vitesse est plus vite ou lent.
 
-![3.1.2.1](3.1.2.1.png)
-![3.1.2.2](3.1.2.2.png)
+<div align="center">
+<img src="https://github.com/TO-OTR/CPP-2018Rapport-UTSEUS/raw/master/RAPPORT/3.1.2.1.png" width = 75% height=75% />
+ </div>
+ 
+<div align="center">
+<img src="https://github.com/TO-OTR/CPP-2018Rapport-UTSEUS/raw/master/RAPPORT/3.1.2.2.png" width = 75% height=75% />
+ </div>
 
 
 ##### **3.1.3 Réfraction, Barre et Frame :**
@@ -300,15 +299,36 @@ cadre avec un angle différent.
 >
 >La frame aussi mais seulment 135°.
 
-![3.1.3.1](3.1.3.1.png)
-![3.1.3.2](3.1.3.2.png)
+<div align="center">
+<img src="https://github.com/TO-OTR/CPP-2018Rapport-UTSEUS/raw/master/RAPPORT/3.1.3.1.png" width = 75% height=75% />
+ </div>
 
-
+<div align="center">
+<img src="https://github.com/TO-OTR/CPP-2018Rapport-UTSEUS/raw/master/RAPPORT/3.1.3.2.png" width = 75% height=75% />
+ </div>
 
 ##### **3.1.4 FIN：**
 
 >Lorsque toutes les briques sont cassées ou que la balle tombe, le jeu se termine automatiquement et le score est calculé.
 
-![3.1.4](3.1.4.png)
+<div align="center">
+<img src="https://github.com/TO-OTR/CPP-2018Rapport-UTSEUS/raw/master/RAPPORT/3.1.4.png" width = 75% height=75% />
+ </div>
+<br/>
 
-### <centre>**Conclusion**</centre>
+### <center> **Conclusion** </center>
+Nous avons quelques difficultés lorsque nous travaillons sur le projet.
+Il nous a fallu beaucoup de temps pour bien comprendre chaque ligne des codes fournis. Le long temps est digne.
+
+>1. Il y a une erreur en raison de la taille en octets du cadre, des briques et de la balle. Nous avons décidé d'utiliser la même chaîne de caractères pour éviter le problème en cas de collision.
+>2. Nous devons modifier certains codes dans "BodyManager.h" pour pouvoir calculer les scores.
+>3. Pour établir le site d'accueil, nous utilisons <window.h> pour nous aider à vider l'interface utilisateur.
+>4. Pour changer la direction du ballon, nous avons pensé à plusieurs plans. L'une consiste à utiliser soudainement une autre balle et à laisser disparaître la première. Celui que nous utilisons finalement est de changer la vitesse en sens négatif, ce qui est plus simple.
+>5.nous avons encore besoin de plus de temps pour améliorer notre code!
+
+Enfin, nous tenons à remercier nos enseignants qui nous ont beaucoup aidés pour la connaissance.
+
+
+###### Éditeur de code: Virtual Studio 2017 
+###### Éditeur de doc: Markdown 
+
